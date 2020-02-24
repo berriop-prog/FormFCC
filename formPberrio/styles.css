@@ -1,0 +1,88 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;  
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(250, 241, 241, 0.904);
+   }
+
+.container {
+  max-width: 640px;  
+  width: 100%;
+  margin: 3.125rem auto 0 auto ;
+}
+
+.text-center{
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  color: palevioletred;
+  text-transform: uppercase;
+}
+form p{
+  font-size: 1.2rem;
+  color: #4f4f4f;
+  margin: 1.2rem 0 0 0 ;
+}
+
+legend{
+  font-size: 1.4rem;
+  color: #33333;
+}
+
+label{
+  font-weight: 500; 
+  display: block;
+}
+
+input[type="text"],
+textarea, 
+select {
+  padding: 0.5rem;
+  display: block;
+  width: 100%;
+  background-color: #e1e1e1;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+select{
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  height: 10rem;
+}
+
+input [type=radio] {
+  width: auto;
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+
+}
+.submit-button{
+  color: #333333;
+  background-color: salmon;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+ }
