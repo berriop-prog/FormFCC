@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form FCC</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header" class="header">
+            <h1 id="title" class="text-center">Formulario de heterosexualidad</h1>
+            <p id="description">¡Gracias por su tiempo!</p>
+        </header>
+        <form id="survey-form" action="">
+            <fieldset>
+                <legend>Información personal</legend>
+                <!--name-->
+                <div class="form-group">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Nombre" required="">
+                </div>
+                <!--email-->
+                <div class="form-group">
+                    <label id="email-label" for="email">Correo</label>
+                    <input id="email" class="form-control" type="text" name="email" placeholder="Correo" required="">
+                </div>
+                <!--age-->
+                <div class="form-group">
+                    <label id="age-label" for="age">Edad</label>
+                    <input id="age" class="form-control" type="number" name="age" min="10" max="99" placeholder="Edad"
+                        required="">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cuentionario</legend>
+                <!--1 question DESPLAZAMIENTO-->
+                <div class="form-group">
+                    <p>1. ¿Cuándo descubriste tu heterosexualidad?</p>
+                    <select id="dropdown" class="form-control" name="descubrir" required="">
+                        <option value="" disabled selected>--Selecciona una--</option>
+                        <option value="siempre">De siempre</option>
+                        <option value="adolencia">En la adolencia</option>
+                        <option value="poco">Hace poco</option>
+                    </select>
+                </div>
+                <div class="one-two">
+                    <!--2 questioN CON RADIO-->
+                    <div class="form-group">
+                        <p>2. ¿Te costo mucho aceptar lo que eres?</p>
+                        <label>
+                            <input class="input-radio" name="user-costo" value="planteo" type="radio" checked="">
+                            Aun me lo planteo.
+                        </label>
+                        <label>
+                            <input class="input-radio" name="user-poco" value="planteo" type="radio" checked="">
+                            Si, aún me cuesta.
+                        </label>
+                        <label>
+                            <input class="input-radio" name="user-poco" value="planteo" type="radio" checked="">
+                            Un poco.
+                        </label>
+                        <label>
+                            <input class="input-radio" name="user-poco" value="encantado" type="radio" checked="">
+                            En realidad estoy encantado.
+                        </label>
+                    </div>
+                    <!--3 questioN CON RADIO-->
+                    <div class="form-group">
+                        <p>3. ¿Conoces casos similares?</p>
+                        <label>
+                            <input class="input-radio" name="user-costo" value="si" type="radio" checked="">
+                            Si.
+                        </label>
+                        <label>
+                            <input class="input-radio" name="user-costo" value="No" type="radio" checked="">
+                            No.
+                        </label>
+                        <label>
+                            <input class="input-radio" name="user-costo" value="nose" type="radio" checked="">
+                            No lo sé. La gente no habbla.
+                        </label>
+                    </div>
+                </div>
+                <!--4 question PADRES-->
+                <div class="form-group">
+                    <p>4. ¿Piensas contarselo a tus padres?</p>
+                    <select id="contar" class="form-control" name="contar" required>
+                        <option value="" disabled selected>--Selecciona una--</option>
+                        <option value="entenderan">Sí, creo que lo entenderan.</option>
+                        <option value="nunca">No, nunca les contaría algo así.</option>
+                        <option value="ya">Ya lo he hecho</option>
+                        <option value="contara">Les costara aceptarlo. Tienen educación tradicional.</option>
+                    </select>
+                </div>
+
+                <!--5 question FRIENDS-->
+                <div class="form-group">
+                    <p>5. ¿Piensas contarselo amigos?</p>
+                    <select id="contar" class="form-control" name="contar" required>
+                        <option value="" disabled selected>--Selecciona una--</option>
+                        <option value="entenderan">Sí, creo que lo entenderan.</option>
+                        <option value="nunca">No, nunca les contaría algo así.</option>
+                        <option value="ya">Ya lo he hecho</option>
+                        <option value="contara">Les costara aceptarlo. Tienen educación tradicional.</option>
+                    </select>
+                </div>
+                <!--6 question DISCRIMINACIÓN-->
+                <div class="form-group">
+                    <p>6. ¿Te has sentido discriminado por ser heretosexual?
+                        <span class="clue">Selección una o varias</span>
+                    </p>
+                    <label>
+                        <input class="input-checkbox" name="discriminado" value="algunas" type="checkbox">
+                        Algunas veces.
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="discriminado" value="si" type="checkbox">
+                        Sí, continuamente.
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="discriminado" value="no" type="checkbox">
+                        No.
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="discriminado" value="oculto" type="checkbox">
+                        No, porque oculto lo que soy.
+                    </label>
+                </div>
+                <!--7 question DISCRIMINACIÓN-->
+                <div class="form-group">
+                    <p> 7. ¿Qúe sientes cuando escuchas la expresión: "Heteresexual de mierda" o las continuas bromas y
+                        chistes
+                        gratuitos al respecto?
+                        <span class="clue">Selección una o varias</span>
+                    </p>
+                    <label>
+                        <input class="input-checkbox" name="sientes" value="duele" type="checkbox">
+                        Me duele y me gustaría desaparecer.
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="sientes" value="mientras" type="checkbox">
+                        Mientras no me lo digan a mi...
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="sientes" value="somos" type="checkbox">
+                        Es que realmente los heterosexuales somos así.
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="sientes" value="defiendo" type="checkbox">
+                        Abiertamente me defiendo.
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Queremos conocer tu opinión</legend>
+                <div class="form-group">
+                    <p>Comentarios o sugeriencias</p>
+                    <textarea id="comments" class="input-textarea" name="comments"
+                        placeholder="Escriba sus comentarios y sugerencias en esta zona"></textarea>
+                </div>
+
+            </fieldset>
+            <div class="form-group">
+                <button id="submit" class="submit-button" type="submit">Enviar</button>
+            </div>
+    </div>
+    </form>
+</body>
+
+</html>
